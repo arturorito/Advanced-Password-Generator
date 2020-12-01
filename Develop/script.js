@@ -81,20 +81,17 @@ function generatePassword() {
     console.log("Number of characters needed for password: " + characterNumber);
     
     var value = [];
-    
+   //loop to create the random numbers 
   for (var k = 0; k < characterNumber; k++) {
     var randomValue = Math.floor(Math.random() * totalCharacters.length);
+    //convert numbers into characters
     var values = totalCharacters[randomValue];
+    //combine the characters into one array
     value.push(values);
+    //combine the array into one 
   } password = value.join("");
   console.log(value);
   console.log(password);
+  //send to the function
   return password
-    //randomValue[k] = Math.floor(Math.random() * totalCharacters.length);
-    //console.log(randomValue[k]);
-    //values[k] = totalCharacters[randomValue];
-    //console.log(values[k]);
-    //console.log("Generated number to match characters to be chosen from: " + randomValue);
-    //console.log("Resulting value from the value-match: " + values);
-      
 }
