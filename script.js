@@ -27,7 +27,7 @@ function generatePassword() {
       //they'll receive cancellation notification
       alert("Password create canceled.");
       //ends the remainder of the code once pressing cancel
-      return;
+      return password = "PASSWORD CREATION CANCELED BY USER";
       //checks to make sure the user input was correct, no numbers lesss than 8 or greater than 128, no other character except numbers 
     }  else if  ((characterNumber < 8 || characterNumber > 128 || Number.isInteger(characterNumber) === false) && characterInput != null) {
       //tells user their input is wrong if it does not meet the requirements
